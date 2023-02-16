@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header>
+    <div class="navbar bg-base-100 lg:px-10 shadow-xl">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Bag</a></li>
+            <li tabindex="0">
+              <a class="justify-between">
+                Parent
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+              </a>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </li>
+            <li><a>All Item</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost normal-case text-xl">AsadShop</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Shoes</a></li>
+          <li tabindex="0">
+            <a>
+              Bag
+              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+            </a>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </li>
+          <li><a>Watch</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Get started</a>
+      </div>
+    </div>
+  </header>
+  <!-- --main--- -->
+  <main class="w-[90%] mx-auto mt-10 px-2">
+    <div class=" flex flex-col md:flex-row lg:flex-row">
+      <div class="w-full md:w-[55%] lg:w-[55%] grid md:grid-cols-2 lg:grid-cols-3 gap-2 ">
+        <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <figure><img class="w-fit" src="img/shoe-3.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title" id="product-name">Shoes Master</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Price:$ <span id="price">100</span></p>
+            <p>Quantity: <span id="quantity">5</span></p>
+            <div class="card-actions justify-end">
+              <button id="fristCard-butt" class="btn btn-primary">Add To Card</button>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd -->
+        <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <figure><img src="img/bag.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Bag</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Price:$ <span>100</span></p>
+            <p>Quantity: <span>5</span></p>
+            <div  class="card-actions justify-end">
+              <button id="secound-card-butt" class="btn btn-primary">Add To Card</button>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd -->
+        <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <figure><img src="img/shoes.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Price:$ <span>100</span></p>
+            <p>Quantity: <span>5</span></p>
+            <div class="card-actions justify-end">
+              <button id="third-card-butt" class="btn btn-primary">Add To Card</button>
+            </div>
+          </div>
+        </div>
+        <!-- 4th -->
+        <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <figure><img src="img/watch.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Watch</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>Price:$ <span>10</span></p>
+            <p>Quantity: <span>2</span></p>
+            <div class="card-actions justify-end">
+              <button id="fourth-card-butt" class="btn btn-primary">Add To Card</button>
+            </div>
+          </div>
+        </div>
+        <!-- 5th -->
+        <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <figure><img src="img/bag-1.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Bag</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <!-- <p>Price:$ <span>100</span></p>
+            <p>Quantity: <span>5</span></p> -->
+            <input id="price" type="text" placeholder="Price:$" class="input input-bordered input-info w-full max-w-xs" value="80"/>
+            <input id="quantity" type="text" placeholder="Quantity:" class="input input-bordered input-info w-full max-w-xs" />
+            <div class="card-actions justify-end">
+              <button id="fifth-card-butt" class="btn btn-primary">Add To Card</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-[40%] lg:w-[40%] bg-gray-300 mx-auto">
+        <h2 class="text-center underline">Account List <span>00</span></h2>
+        <div class="tab">
+          <div class="overflow-x-auto">
+            <table class="table w-full ">
+              <!-- head -->
+              <thead >
+                <tr class="underline">
+                  <th >No</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Qun:</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="table-conainer" class="text-black ">
+                <!-- row 1 -->
+                <!-- <tr>
+                  <th>1</th>
+                  <td>Cy Ganderton</td>
+                  <td>Quality Control Specialist</td>
+                  <td>Blue</td>
+                </tr> -->
+              </tbody>
+            </table>
+            <div class="mt-2 bg-blue-300  ml-[40%] p-1 border-2 border-rose-600 rounded-lg">TOTAL AMOUNT = $<span class="text-indigo-900 font-semibold" id="total">00</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- <script></script> -->
+  <script src="js/uitility.js"></script>
+  <script src="js/allbutton.js"></script>
+</body>
+</html>
